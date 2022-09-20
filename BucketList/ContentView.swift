@@ -4,42 +4,54 @@
 //
 //  Created by Jacek Kosinski U on 17/09/2022.
 //
-import LocalAuthentication
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isUnlocked = false
+    @State private var mapRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 50, longitude: 0)
+        ,span:  MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+    @State private var locations = [Location]()
     var body: some View {
-        VStack {
-            if isUnlocked {
-                Text("Unlocked")
-            } else {
-                Text("Locked")
+        ZStack {
+            Map(coordinateRegion: $mapRegion, annotationItems:locations) { location in
+                MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.latitude))
             }
-                
-        }
-        .onAppear(perform: authenticate)
-        .padding()
-    }
-    func authenticate() {
-        let context = LAContext()
-        var error: NSError?
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics
-                                     , error:     &error) {
-            let reason = "We unlock your data i get a bank credit on your name"
+            .ignoresSafeArea()
             
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+            Circle()
+                .fill(.blue)
+                .opacity(0.3)
+                .frame(width:32,height: 32)
+            VStack{
+                Spacer()
                 
-                if success {
-                    // authenticate succesfully
-                    isUnlocked = true
-                } else {
-                    // there was a problem
+                HStack{
+                    Spacer()
+                    
+                    Button{
+                        //creaste new location
+                        let newLocation = Location(id: UUID()
+                                                   , name: "New location"
+                                                   , description: ""
+                                                   , latitude: mapRegion.center.latitude
+                                                   , longitude: mapRegion.center.longitude)
+                        locations.append(newLocation)
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    .padding()
+                    .background(.black.opacity(0.75))
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .clipShape(Circle())
+                    .padding(.trailing)
+                    
                 }
             }
-        } else {
-            // no biometrics
         }
+        
+        
     }
 }
 
