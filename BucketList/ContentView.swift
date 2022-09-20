@@ -14,11 +14,14 @@ struct ContentView: View {
     @State private var locations = [Location]()
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $mapRegion, annotationItems:locations) { location in
+            Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
                 MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.latitude))
             }
             .ignoresSafeArea()
-            
+//            Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
+//                MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
+//            }
+//            .ignoresSafeArea()
             Circle()
                 .fill(.blue)
                 .opacity(0.3)
