@@ -25,6 +25,7 @@ struct ContentView: View {
                             .background(.white)
                             .clipShape(Circle())
                         Text(location.name)
+                            .fixedSize()
                     }
                     .onTapGesture {
                         selectedPlace = location
