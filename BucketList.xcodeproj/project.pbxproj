@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		763C620228E0811C00541515 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620128E0811C00541515 /* Result.swift */; };
+		763C620428E0C46700541515 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620328E0C46700541515 /* ViewModel.swift */; };
+		763C620628E0C8F800541515 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */; };
 		76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */; };
 		76BF7A8C28D5F9C3007CBE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */; };
 		76BF7A8E28D5F9C4007CBE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF7A8D28D5F9C4007CBE56 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		763C620128E0811C00541515 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		763C620328E0C46700541515 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		76BF7A8628D5F9C3007CBE56 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				76BF7A9028D5F9C4007CBE56 /* Preview Content */,
 				76BF7A9828DA34AA007CBE56 /* Location.swift */,
 				76BF7A9A28DA5857007CBE56 /* EditLocationView.swift */,
+				763C620328E0C46700541515 /* ViewModel.swift */,
+				763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				763C620228E0811C00541515 /* Result.swift in Sources */,
 				76BF7A9928DA34AA007CBE56 /* Location.swift in Sources */,
 				76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */,
+				763C620428E0C46700541515 /* ViewModel.swift in Sources */,
+				763C620628E0C8F800541515 /* FileManager-DocumentDirectory.swift in Sources */,
 				76BF7A9B28DA5857007CBE56 /* EditLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +289,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Musimy odblkokowac twoje dane";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,7 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Musimy odblkokowac twoje dane";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

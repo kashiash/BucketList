@@ -28,6 +28,10 @@ struct EditLocationView: View {
             Form {
                 Section{
                     TextField("Place name",text: $name)
+                    HStack{
+                        Text("Latitude:\(location.latitude)").font(.caption2)
+                        Text("Longitude:\(location.longitude)").font(.caption2)
+                    }
                     TextField("Description", text: $description)
                 }
                 Section("Nearby..."){
@@ -39,8 +43,9 @@ struct EditLocationView: View {
                             Text(page.title)
                                 .font(.headline)
                             + Text (": " ) +
-                            Text("Page description here")
+                            Text(page.description)
                                 .italic()
+                           
                         }
                     case .failed:
                         Text("Pleasy try again later.")
@@ -88,7 +93,8 @@ struct EditLocationView: View {
             let items = try JSONDecoder().decode(Result.self, from: data)
 
             // success – convert the array values to our pages array
-           // pages = items.query.pages.values.sorted { $0.title < $1.title }
+            
+            // pages = items.query.pages.values.sorted { $0.title < $1.title }
             pages = items.query.pages.values.sorted()
             loadingState = .loaded
         } catch {
