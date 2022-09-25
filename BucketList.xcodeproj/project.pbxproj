@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		763C620228E0811C00541515 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620128E0811C00541515 /* Result.swift */; };
-		763C620428E0C46700541515 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620328E0C46700541515 /* ViewModel.swift */; };
+		763C620428E0C46700541515 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620328E0C46700541515 /* ContentView-ViewModel.swift */; };
 		763C620628E0C8F800541515 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */; };
+		763C620828E0E3E900541515 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620728E0E3E900541515 /* EditView-ViewModel.swift */; };
 		76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */; };
 		76BF7A8C28D5F9C3007CBE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */; };
 		76BF7A8E28D5F9C4007CBE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF7A8D28D5F9C4007CBE56 /* Assets.xcassets */; };
 		76BF7A9228D5F9C4007CBE56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF7A9128D5F9C4007CBE56 /* Preview Assets.xcassets */; };
 		76BF7A9928DA34AA007CBE56 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A9828DA34AA007CBE56 /* Location.swift */; };
-		76BF7A9B28DA5857007CBE56 /* EditLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A9A28DA5857007CBE56 /* EditLocationView.swift */; };
+		76BF7A9B28DA5857007CBE56 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A9A28DA5857007CBE56 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		763C620128E0811C00541515 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		763C620328E0C46700541515 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		763C620328E0C46700541515 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
+		763C620728E0E3E900541515 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 		76BF7A8628D5F9C3007CBE56 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		76BF7A8F28D5F9C4007CBE56 /* BucketList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BucketList.entitlements; sourceTree = "<group>"; };
 		76BF7A9128D5F9C4007CBE56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76BF7A9828DA34AA007CBE56 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		76BF7A9A28DA5857007CBE56 /* EditLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLocationView.swift; sourceTree = "<group>"; };
+		76BF7A9A28DA5857007CBE56 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +71,9 @@
 				76BF7A8F28D5F9C4007CBE56 /* BucketList.entitlements */,
 				76BF7A9028D5F9C4007CBE56 /* Preview Content */,
 				76BF7A9828DA34AA007CBE56 /* Location.swift */,
-				76BF7A9A28DA5857007CBE56 /* EditLocationView.swift */,
-				763C620328E0C46700541515 /* ViewModel.swift */,
+				76BF7A9A28DA5857007CBE56 /* EditView.swift */,
+				763C620328E0C46700541515 /* ContentView-ViewModel.swift */,
+				763C620728E0E3E900541515 /* EditView-ViewModel.swift */,
 				763C620528E0C8F800541515 /* FileManager-DocumentDirectory.swift */,
 			);
 			path = BucketList;
@@ -158,9 +161,10 @@
 				763C620228E0811C00541515 /* Result.swift in Sources */,
 				76BF7A9928DA34AA007CBE56 /* Location.swift in Sources */,
 				76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */,
-				763C620428E0C46700541515 /* ViewModel.swift in Sources */,
+				763C620428E0C46700541515 /* ContentView-ViewModel.swift in Sources */,
+				763C620828E0E3E900541515 /* EditView-ViewModel.swift in Sources */,
 				763C620628E0C8F800541515 /* FileManager-DocumentDirectory.swift in Sources */,
-				76BF7A9B28DA5857007CBE56 /* EditLocationView.swift in Sources */,
+				76BF7A9B28DA5857007CBE56 /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
