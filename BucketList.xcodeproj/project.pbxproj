@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763C620228E0811C00541515 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C620128E0811C00541515 /* Result.swift */; };
 		76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */; };
 		76BF7A8C28D5F9C3007CBE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */; };
 		76BF7A8E28D5F9C4007CBE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF7A8D28D5F9C4007CBE56 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763C620128E0811C00541515 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		76BF7A8628D5F9C3007CBE56 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				76BF7A8928D5F9C3007CBE56 /* BucketListApp.swift */,
 				76BF7A8B28D5F9C3007CBE56 /* ContentView.swift */,
+				763C620128E0811C00541515 /* Result.swift */,
 				76BF7A8D28D5F9C4007CBE56 /* Assets.xcassets */,
 				76BF7A8F28D5F9C4007CBE56 /* BucketList.entitlements */,
 				76BF7A9028D5F9C4007CBE56 /* Preview Content */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BF7A8C28D5F9C3007CBE56 /* ContentView.swift in Sources */,
+				763C620228E0811C00541515 /* Result.swift in Sources */,
 				76BF7A9928DA34AA007CBE56 /* Location.swift in Sources */,
 				76BF7A8A28D5F9C3007CBE56 /* BucketListApp.swift in Sources */,
 				76BF7A9B28DA5857007CBE56 /* EditLocationView.swift in Sources */,
@@ -288,7 +292,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -327,7 +331,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
