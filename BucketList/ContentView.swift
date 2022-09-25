@@ -83,6 +83,12 @@ struct ContentView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert("Nie rozpoznano użytkownika",isPresented: $viewModel.isShowingAuthenticationError){
+                Button("OK"){}
+                
+            } message: {
+                Text(viewModel.authenticationError)
+            }
         }
             
         

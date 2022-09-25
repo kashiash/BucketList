@@ -16,6 +16,9 @@ extension ContentView {
         @Published var selectedPlace: Location?
         @Published var isUnlocked = false
         
+        @Published var authenticationError = "Unknown error"
+        @Published var isShowingAuthenticationError = false
+        
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         init(){
             do {
@@ -43,7 +46,7 @@ extension ContentView {
                                        , latitude: mapRegion.center.latitude
                                        , longitude: mapRegion.center.longitude)
             locations.append(newLocation)
-     
+            
         }
         
         func update(location: Location) {
@@ -58,22 +61,27 @@ extension ContentView {
         func authenticate() {
             let context = LAContext()
             var error: NSError?
-
+            
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                 let reason = "Please authenticate yourself to unlock your places."
-
+                
                 context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-
+                    Task { @MainActor in
                     if success {
-                        Task { @MainActor in
-                                self.isUnlocked = true
-                        }
+                     
+                            self.isUnlocked = true
+                       
                     } else {
-                        // error
+                       
+                            self.authenticationError = "Sory batory, coś nie bangla, spróbuj ponownie"
+                            self.isShowingAuthenticationError = true
+                        }
                     }
                 }
             } else {
-                // no biometrics
+                authenticationError = "Sory batory, ale masz stary sprzęt ktory nie rozpoznaje mordy właściciela"
+                isShowingAuthenticationError = true
+                
             }
         }
     }
